@@ -217,8 +217,22 @@ myGrade(75);
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+function numberOfVowels(words)
+{
+    let vowels = 'aeiouAEIOU'
+    let count = 0;
 
+    for(let i = 0; i < words.length; i++)
+    {
+        if (vowels.indexOf(words[i]) !== -1)
+        {
+            count += 1;
+        }
+    }
+    return count;
+}
 
+console.log(numberOfVowels("This Is Absolutely Amazing!!!"));
 
 
 /************************************************************** Stretch **************************************************************/
